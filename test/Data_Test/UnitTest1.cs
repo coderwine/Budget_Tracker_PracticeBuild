@@ -54,5 +54,17 @@ public class UnitTest1
         Assert.Equal(exp, act);
     }
 
+    [Fact]
+    public void MainTransaction_Date()
+    {
+        Transaction one = new Transaction();
+        one.Date = new System.DateTime(2022, 6,25);
+
+        string exp = "6/25/2022";
+        string act = one.Date.ToString("M/d/yyyy");
+
+        Assert.Equal(exp, act);
+    }
+
 
 }
