@@ -5,6 +5,10 @@ using System.Threading.Tasks;
 
 public class Association
 {
+    public Association(string title)
+    {
+        Title = title;
+    }
     public Association(string title, string detail)
     {
         Title = title;
